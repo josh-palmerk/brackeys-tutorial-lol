@@ -21,7 +21,8 @@ Instructions for using the software:
 
 1. Arrow keys move left and right; WASD also works
 2. Up or W to jump & double jump
-3. Space bar to dash (coming soon)
+3. Space bar to dash 
+4. Shift to sprint
 
 ## Development Environment 
 
@@ -34,14 +35,15 @@ To recreate the development environment, you need the following software and/or 
 
 I found these websites useful in developing this software:
 
-* [](Link)
-*
-*
+* [Godot Docs](https://docs.godotengine.org/en/stable/index.html)
+* [Stack Overflow](stackoverflow.com)
+* [Brackeys Youtube](https://www.youtube.com/@Brackeys)
 
 ## Future Work
 
 The following items I plan to fix, improve, and/or add to this project in the future:
 
-* [ ] First thing here
-* [ ]
-* [ ]
+* [ ] Debug jump buffer
+* [ ] Attacks & health
+* [ ] Better anims
+* [ ] Goal/objective

@@ -17,7 +17,7 @@ func _init(max_length: int = INF) -> void:
 
 
 func enqueue(data) -> void:
-	assert(_length < _max_length, "Unable to enqueue data - Queue is full")
+	# assert(_length < _max_length, "Unable to enqueue data - Queue is full")
 	var new_node = QueueNode.new(data)
 	if _head == null:
 		_head = new_node
@@ -26,6 +26,8 @@ func enqueue(data) -> void:
 		_tail.next = new_node
 		new_node.prev = _tail
 		_tail = new_node
+	if _length > _max_length:
+		dequeue()
 	_length += 1
 
 
@@ -41,6 +43,14 @@ func dequeue():
 
 func peek():
 	return _head.data
+
+func peek_all():   # -> Array:
+	var data_list = []
+	var curr = _head
+	while curr.next != null:
+		data_list.append(curr.data)
+		curr = curr.next
+	return data_list
 
 
 func is_empty() -> bool:
